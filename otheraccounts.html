@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Account</title>
+</head>
+<body>
+    <div class="backdrop">
+        <div class="account">
+            <div class="pfp">
+                <h1>Profile Picture</h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="sort">
+                <div class="sortby">
+                    <h1>Sort By</h1>
+                </div>
+                <div class="phone">
+                    <p>Phone #</p>
+                    <div class="phone-country">
+                        <button class="country-btn">US</button>
+                    </div>
+                    <div class="phone-first">
+                        <p>###</p>
+                    </div>
+                    <div class="phone-last">
+                        <p>###</p>
+                    </div>
+                </div>
+                <div class="date">
+                    <button class="date-btn">Date</button>
+                </div>
+            </div>
+            <div class="files">
+                <div class="sorted">
+                    <p class="sort-phone">Phone Number</p>
+                    <p class="sort-date">Upload Date</p>
+                </div>
+                <div class="filest">Submission 1</div>
+                <div class="filest">Submission 2</div>
+                <div class="filest">Submission 3</div>
+                <div class="filest">Submission 4</div>
+                <div class="filest">Submission 5</div>
+                <div class="filest">Submission 6</div>
+                <div class="filest">Submission 7</div>
+                <div class="filest">Submission 8</div>
+                <div class="filest">Submission 9</div>
+                <div class="filest">Submission 10</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+<style>
+    .backdrop {
+        display: flex;
+        border-radius: 15px;
+        border: 3px solid #ccc;
+        background-color: #ccc;
+        align-items: flex-start;
+        padding: 10px;
+        height: 100vh;
+    }
+
+    .account {
+        flex: 1;
+        border: 1px solid black;
+        border-radius: 15px;
+        height: 100vh;
+    }
+
+    .container {
+        flex: 3;
+        border: 1px solid black;
+        border-radius: 15px;
+        height: 100vh;
+    }
+
+    .pfp {
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px grey;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 15vh;
+        height: 15vh;
+        border-radius: 15px;
+    }
+
+    .files {
+        flex: 1;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px grey;
+        margin-top: 5vh;
+        margin-left: 10vh;
+        border-radius: 15px;
+        width: 130vh;
+        height: 60vh;
+    }
+
+    .sort {
+        flex: 1;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px grey;
+        margin-top: 10vh;
+        margin-left: 10vh;
+        border-radius: 15px;
+        width: 130vh;
+        height: 20vh;
+    }
+
+    .sortby {
+        flex: 1;
+        border: none;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 50vh;
+        height: 7vh;
+        width: 20vh;
+    }
+
+    .phone {
+        flex: 1;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px grey;
+        text-align: center;
+        border-radius: 15px;
+        margin-top: -2vh;
+        margin-left: 10vh;
+        width: 40vh;
+        height: 10vh;
+    }
+
+    .date {
+        flex: 1;
+        border: 1px solid black;
+        box-shadow: 10px 10px 5px grey;
+        text-align: center;
+        border-radius: 15px;
+        margin-left: 55vh;
+        margin-top: -9vh;
+        width: 20vh;
+        height: 7vh;
+    }
+
+    .date-btn {
+        margin-top: 20px;
+    }
+
+    .phone-country {
+        flex: 1;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 15px;
+        margin-left: 10px;
+        margin-top: -1vh;
+        width: 4vh;
+        height: 5vh;
+    }
+
+    .phone-first {
+        flex: 1;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 15px;
+        margin-left: 6vh;
+        margin-top: -5.3vh;
+        width: 15vh;
+        height: 5vh;
+    }
+
+    .phone-last {
+        flex: 1;
+        border: 1px solid black;
+        background-color: white;
+        border-radius: 15px;
+        width: 15vh;
+        height: 5vh;
+        margin-left: 23vh;
+        margin-top: -5.3vh;
+    }
+
+    .country-btn {
+        margin-top: 10px;
+    }
+
+    .sorted {
+        display: flex;
+        border: 1px solid black;
+        border-radius: 15px;
+        width: 130vh;
+        height: 30px;
+    }
+
+    .filest {
+        border: 1px solid black;
+        font-size: 30px;
+        background-color: white;
+        border-radius: 15px;
+        width: 129.8vh;
+        height: 50px;
+    }
+
+    .sort-phone {
+        font-size: 12px;
+        font-weight: bold;
+        flex: 3;
+    }
+
+    .sort-date {
+        flex: 2;
+        font-size: 12px;
+        font-weight: bold;
+    }
+</style>
