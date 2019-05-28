@@ -12,6 +12,15 @@
             <div class="pfp">
                 <h1>Profile Picture</h1>
             </div>
+            <div class="acc-info">
+                <h1>General Info</h1>
+            </div>
+            <div class="acc-bio">
+                <h1>Bio</h1>
+                <div class="other-info">
+                    <h1>Other Info</h1>
+                </div>
+            </div>
         </div>
         <div class="container">
             <div class="sort">
@@ -70,23 +79,23 @@
     }
     .account{
         flex:1;
+        box-shadow: 10px 10px 5px grey;
         border:1px solid black;
         border-radius:15px;
         height:100vh;
     }
     .container{
         flex:3;
-        border:1px solid black;
         border-radius:15px;
         height:100vh;
     }
     .pfp{
         border:1px solid black;
-        box-shadow: 10px 10px 5px grey;
+        text-align:center;
         margin-top:20px;
         margin-left:20px;
-        width:15vh;
-        height: 15vh;
+        width:20vh;
+        height: 20vh;
         border-radius:15px;
     }
     .files{
@@ -202,5 +211,31 @@
         flex:2;
         font-size:12px;
         font-weight:bold;
+    }
+    .acc-bio{
+        text-align:center;
+        margin-top:10px;
+        margin-left:20px;
+        width:45vh;
+        height:75vh;
+        border:1px solid black;
+        border-radius:15px;
+    }
+    .acc-info{
+        text-align:center;
+        margin-top:-20.2vh;
+        margin-left:22.7vh;
+        border:1px solid black;
+        border-radius:15px;
+        width:25vh;
+        height:20vh;
+    }
+    .other-info{
+        margin-top:46vh;
+        margin-left:20px;
+        height:20vh;
+        width:40.8vh;
+        border:1px solid black;
+        border-radius:15px;
     }
 </style>
