@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -21,8 +21,43 @@
     </ul>
   </nav>
   <div class="backdrop">
-    <div class="account mainBox"></div>
-    <div class="file list"></div>
+    <div class="account mainBox">
+        <div class="pfp">
+            <button>Browse</button>
+        </div>
+        <div class="infoBox">
+            <input class="account first" type="text" value="First" />
+            <input class="account last" type="text" value="Last" />
+            <input class="account country" type="text" value="Country" />
+            <input class="account state" type="text" value="State" />
+            <input class="account zip" type="text" value="Zip" />
+        </div>
+        <div class="account etcInfo">
+            <input class="account etcInf2" type="text" value="Additional Info" />
+        </div>
+    </div>
+    <div class="file list">
+        <div class="file realFilt">
+            <input type="search" value="search specific" />
+            <button class="filt buttons">Sort by Date</button>
+            <button class="filt buttons">Sort by Phone #</button>
+        </div>
+        <button class="file submit">submit</button>
+        <div class="files realList">
+            <ul class="files submiss">
+                <li>Submission 1</li>
+                <li>Submission 2</li>
+                <li>Submission 3</li>
+                <li>Submission 4</li>
+                <li>Submission 5</li>
+                <li>Submission 6</li>
+                <li>Submission 7</li>
+                <li>Submission 8</li>
+                <li>Submission 9</li>
+                <li>Submission 10</li>
+            </ul>
+        </div>
+    </div>
     <div class="file filt"></div>
   </div>
 </body>
@@ -41,15 +76,14 @@
   height:500px;
   width:40vh;
 }
-/* .list{
-  flex:1;
+    .list{
+  flex:3;
   background-color:#c9c9c9;
   margin-left:200px;
   border:1px solid black;
   height:500px;
   width:55vh;
-
-} */
+    }
 .backdrop{
   display:flex;
   flex:1;
@@ -77,5 +111,68 @@
   height:20vh;
   margin-top:5vh;
   padding:0px;
+}
+.filt{
+    flex:1;
+    width:100%;
+}
+.pfp{
+    margin-left:25px;
+    margin-top:25px;
+    border:1px solid black;
+    height:100px;
+    width:100px;
+}
+.infoBox{
+    margin-top:-102px;
+    margin-left:130px;
+    width:180px;
+    height:100px;
+}
+.etcInfo{
+    margin-top:10px;
+    margin-left:25px;
+    border:1px solid black;
+    height:330px;
+    width:275px;
+}
+.etcInf2{
+    text-align:center;
+    font-size:12px;
+    margin-left:-1px;
+    border:1px solid black;
+    height:330px;
+    width:275px;
+}
+.realFilt{
+    display:flex;
+    flex:1;
+    margin-top:25px;
+    margin-left:25px;
+    border:1px solid black;
+    height:75px;
+    width:500px;
+}
+.realList{
+    flex:1;
+    background-color:lightgray;
+    border:1px solid black;
+    margin-top:10px;
+    margin-left:25px;
+    height:350px;
+    width:935px;
+}
+.submit{
+    margin-left:550px;
+}
+.submiss{
+    font-size:25px;
+    list-style:none;
+}
+.submiss li:hover{
+    color:white;
+    margin-left:0px;
+    border:1px solid black;
+    background-color:lightseagreen;
 }
 </style>
