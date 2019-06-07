@@ -1,0 +1,74 @@
+body {
+    padding: 2em; 
+    font-family: 'Roboto Condensed', sans-serif;
+
+  }
+
+button {
+    background: transparent;
+    border-style: none;
+  }
+
+.wrapper {
+    display: flex;
+    flex-flow:row wrap;
+    font-weight: bold;
+    text-align: center;
+}
+  
+  .search .button {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    order: 1;
+  }
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  
+.show {
+    display: block;
+  }
+
+.recent {
+    order: 2;
+}
+
+.trending {
+    order: 3;
+}
+
+
+  
+@media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+  }
+  
+  @media all and (min-width: 800px) {
+    .phoneNum    { flex: 3 0px; }
+    .search { order: 1; } 
+    .phoneNum    { order: 2; }
+    .trending { order: 3; }
+    .footer  { order: 4; }
+  }
