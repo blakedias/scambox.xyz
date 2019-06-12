@@ -11,12 +11,13 @@
   <nav class="navMain">
 
     <img src="#" alt="logo" class="logo">
+    <button onclick="window.location.href='otheraccounts.html'">dev</button>
 
     <ul class="navList">
 
-      <li><a href="#">home</a></li>
-      <li><a href="#">news</a></li>
-      <li><a href="#">recent uploads</a></li>
+      <li><a href="index.html">home</a></li>
+      <li><a href="news.html">news</a></li>
+      <li><a href="recent.html">recent uploads</a></li>
       <li><a href="#">log in/ <span class="signUp">sign up</span></a></li>
 
     </ul>
@@ -28,7 +29,9 @@
     <h1>scam box search</h1>
 
     <h3 class="tabSelector tabBasic">basic</h3>
-    <h3 class="tabSelector tabAdvanced">advanced</h3>
+    <a id="tabAdvanced"onclick="function {searchAdv()}">
+      <h3 class="tabSelector tabAdvanced">advanced</h3>
+    </a>
 
     <div class="searchBox">
 
@@ -41,9 +44,18 @@
 
       </form>
 
-      <button class="searchBtn">submit<S/button>
+      <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
     </div>
   </main>
+  <script>
+
+  function searchAdv(){
+    document.getElementById("tabAdvanced"){
+      .onclick = alert("yes");
+    }
+  }
+
+  </script>
 </body>
 </html>
 
@@ -123,6 +135,9 @@
   .tabAdvanced{
     background-color:#ededed;
     margin-left:0px;
+  }
+  .tabAdvanced:hover{
+    background-color: gray;
   }
 
   .searchBox{

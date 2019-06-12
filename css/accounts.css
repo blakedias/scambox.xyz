@@ -1,0 +1,102 @@
+.mainBox{
+  flex:1;
+  background-color: #c9c9c9;
+  margin-left:50px;
+  border:1px solid black;
+  height:500px;
+  width:40vh;
+}
+    .list{
+  flex:3;
+  background-color:#c9c9c9;
+  margin-left:200px;
+  border:1px solid black;
+  height:500px;
+  width:55vh;
+    }
+.backdrop{
+  display:flex;
+  flex:1;
+  width:100%;
+  height: 500px;
+  background-color:white;
+}
+.navList{
+  float:right;
+  margin-right:5%;
+  list-style:none;
+  border:1px solid black;
+  padding:2px;
+}
+
+.navList li{
+  text-align:center;
+}
+
+.navList li:hover{
+  background-color:#c9c9c9;
+}
+.navMain{
+  font-family:#;
+  height:20vh;
+  margin-top:5vh;
+  padding:0px;
+}
+.filt{
+    flex:1;
+    width:100%;
+}
+.pfp{
+    margin-left:25px;
+    margin-top:25px;
+    border:1px solid black;
+    height:100px;
+    width:100px;
+}
+.infoBox{
+    margin-top:-102px;
+    margin-left:130px;
+    width:180px;
+    height:100px;
+}
+.etcInfo{
+    margin-top:10px;
+    margin-left:7%;
+    border:1px solid black;
+    height:330px;
+    width:275px;
+}
+.etcInf2{
+    text-align:center;
+    font-size:12px;
+    margin-top:-1%;
+    margin-left:-1%;
+    border:1px solid black;
+    height:100%;
+    width:100%;
+}
+.realFilt{
+    display:flex;
+    flex:1;
+    margin-top:25px;
+    margin-left:25px;
+    border:3px solid black;
+    height:75px;
+    width:500px;
+}
+.realList{
+    flex:1;
+    background-color:lightgray;
+    margin-top:10px;
+    margin-left:25px;
+    height:350px;
+    width:94%;
+}
+.submit{
+    margin-left:550px;
+}
+.form{
+  border:1px solid black;
+    height:100%;
+    width:100%;
+}
