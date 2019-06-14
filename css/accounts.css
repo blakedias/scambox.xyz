@@ -1,5 +1,6 @@
 .mainBox{
   flex:1;
+  font-family: 'Crimson Text', serif;
   background-color: #c9c9c9;
   margin-left:50px;
   border:1px solid black;
@@ -8,6 +9,7 @@
 }
     .list{
   flex:3;
+  font-family: 'Crimson Text', serif;
   background-color:#c9c9c9;
   margin-left:200px;
   border:1px solid black;
@@ -45,6 +47,7 @@
 .filt{
     flex:1;
     width:100%;
+    font-family: 'Crimson Text', serif;
 }
 .pfp{
     margin-left:25px;
@@ -58,6 +61,7 @@
     margin-left:130px;
     width:180px;
     height:100px;
+    font-family: 'Crimson Text', serif;
 }
 .etcInfo{
     margin-top:10px;
@@ -65,6 +69,7 @@
     border:1px solid black;
     height:330px;
     width:275px;
+    font-family: 'Crimson Text', serif;
 }
 .etcInf2{
     text-align:center;
@@ -74,6 +79,7 @@
     border:1px solid black;
     height:100%;
     width:100%;
+    font-family: 'Crimson Text', serif;
 }
 .realFilt{
     display:flex;
@@ -83,6 +89,7 @@
     border:3px solid black;
     height:75px;
     width:500px;
+    font-family: 'Crimson Text', serif;
 }
 .realList{
     flex:1;
@@ -91,12 +98,14 @@
     margin-left:25px;
     height:350px;
     width:94%;
+    font-family: 'Crimson Text', serif;
 }
 .submit{
     margin-left:550px;
 }
 .form{
-  border:1px solid black;
+    border:1px solid black;
     height:100%;
     width:100%;
+    font-family: 'Crimson Text', serif;
 }

@@ -9,54 +9,38 @@
 </head>
 <body>
   <nav class="navMain">
-
     <img src="#" alt="logo" class="logo">
     <button onclick="window.location.href='otheraccounts.html'">dev</button>
-
     <ul class="navList">
-
       <li><a href="index.html">home</a></li>
       <li><a href="news.html">news</a></li>
       <li><a href="recent.html">recent uploads</a></li>
       <li><a href="#">log in/ <span class="signUp">sign up</span></a></li>
-
     </ul>
   </nav>
-
-
   <main>
-
     <h1>scam box search</h1>
     <a id="tabBasic" onclick="searchBasic()">
-    <h3 class="tabSelector tabBasic">basic</h3>
+      <h3 class="tabSelector tabBasic">basic</h3>
     </a>
     <a id="tabAdvanced" onclick="searchAdv()">
       <h3 class="tabSelector tabAdvanced">advanced</h3>
     </a>
-
     <div id="searchBoxBasic">
-
       <form>
         <h2>enter phone number
-        <p class="search-desc">(no dashes, no spaces)</p>
+        <p class="search-desc">(no dashes, no spaces. 10 character limit.)</p>
       </h2><br>
-
-        <input type="text" name="phoneNum" value="xxx-xxx-xxxx" class="searchInput" maxlength="10"></input>
-
+        <input type="text" name="phoneNum" class="searchInput" maxlength="10"></input>
       </form>
-
       <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
     </div>
     <div id="searchBoxAdv">
-
       <form>
-        <h2>enter anything
+        <h2>search for anything
       </h2><br>
-
-        <input type="text" name="phoneNum" value="advanced search" class="searchInput" maxlength="100"></input>
-
+        <input type="text" name="phoneNum" class="searchInput" maxlength="100"></input>
       </form>
-
       <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
     </div>
   </main>
@@ -65,7 +49,6 @@
   function searchAdv(){
     document.getElementById('searchBoxBasic').style.zIndex = -1;
     document.getElementById('searchBoxAdv').style.zIndex = 1;
-
   }
   function searchBasic(){
     document.getElementById('searchBoxBasic').style.zIndex = 1;
@@ -75,14 +58,11 @@
   </script>
 </body>
 </html>
-
-
 <style>
     html, body{
     margin:0px;
     padding:0px;
   }
-
   .navMain{
     font-family:#;
     height:20vh;
@@ -90,12 +70,10 @@
     padding:0px;
 
   }
-
   .logo{
     margin-left:5%;
     float:left;
   }
-
   .navList{
     float:right;
     margin-right:5%;
@@ -103,20 +81,16 @@
     border:1px solid black;
     padding:2px;
   }
-
   .navList li{
       text-align:center;
   }
-
   .navList li:hover{
     background-color:#c9c9c9;
   }
-
   a{
     text-decoration:none;
     color:black;
   }
-
   main{
     position: relative;
     width:40%;
@@ -124,7 +98,6 @@
     margin-left:auto;
     margin-right:auto;
   }
-
   h1{
     font-family: 'Crimson Text', serif;
     text-align:center;
@@ -135,7 +108,6 @@
     background-color:rgba(201, 201, 201,.7);
     border:1px solid black;
   }
-
   .tabSelector{
     margin-bottom:0;
     text-align:center;
@@ -146,7 +118,6 @@
     border-left:1px solid black;
     border-right:1px solid black;
   }
-
   .tabBasic{
       background-color:#ededed;
   }
@@ -160,7 +131,6 @@
   .tabAdvanced:hover{
     background-color: gray;
   }
-
   #searchBoxBasic{
     z-index: 1;
     position: absolute;
@@ -185,27 +155,21 @@
     background-color:rgba(201, 201, 300,1);
     border:1px solid black;
   }
-
   form{
     text-align:center;
     display:block;
-
   }
-
   form h2{
     text-align:center;
     display:inline-block;
     margin-top:3vh;
   }
-
   button{
     display:block;
     margin-left:auto;
     margin-right:auto;
     margin-top:20px;
-
   }
-
   .searchInput{
     width:80%;
     height:3.5vh;
@@ -215,5 +179,4 @@
     padding:0px;
     font-size: 12px;
   }
-
 </style>
