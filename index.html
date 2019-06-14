@@ -27,13 +27,14 @@
   <main>
 
     <h1>scam box search</h1>
-
+    <a id="tabBasic" onclick="searchBasic()">
     <h3 class="tabSelector tabBasic">basic</h3>
-    <a id="tabAdvanced"onclick="function {searchAdv()}">
+    </a>
+    <a id="tabAdvanced" onclick="searchAdv()">
       <h3 class="tabSelector tabAdvanced">advanced</h3>
     </a>
 
-    <div class="searchBox">
+    <div id="searchBoxBasic">
 
       <form>
         <h2>enter phone number
@@ -46,13 +47,29 @@
 
       <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
     </div>
+    <div id="searchBoxAdv">
+
+      <form>
+        <h2>enter anything
+      </h2><br>
+
+        <input type="text" name="phoneNum" value="advanced search" class="searchInput" maxlength="100"></input>
+
+      </form>
+
+      <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
+    </div>
   </main>
   <script>
 
   function searchAdv(){
-    document.getElementById("tabAdvanced"){
-      .onclick = alert("yes");
-    }
+    document.getElementById('searchBoxBasic').style.zIndex = -1;
+    document.getElementById('searchBoxAdv').style.zIndex = 1;
+
+  }
+  function searchBasic(){
+    document.getElementById('searchBoxBasic').style.zIndex = 1;
+    document.getElementById('searchBoxAdv').style.zIndex = -1;
   }
 
   </script>
@@ -101,6 +118,7 @@
   }
 
   main{
+    position: relative;
     width:40%;
     font-family: 'Crimson Text', serif;
     margin-left:auto;
@@ -130,7 +148,10 @@
   }
 
   .tabBasic{
-      background-color:rgba(201, 201, 201,.7)
+      background-color:#ededed;
+  }
+  .tabBasic:hover{
+    background-color:gray;
   }
   .tabAdvanced{
     background-color:#ededed;
@@ -140,14 +161,28 @@
     background-color: gray;
   }
 
-  .searchBox{
+  #searchBoxBasic{
+    z-index: 1;
+    position: absolute;
     width:100%;
     height:28vh;
     float:clear;
     font-family: 'Crimson Text', serif;
     margin-left:auto;
     margin-right:auto;
-    background-color:rgba(201, 201, 201,.7);
+    background-color:rgba(201, 201, 201,1);
+    border:1px solid black;
+  }
+  #searchBoxAdv{
+    position: absolute;
+    z-index: -1;
+    width:100%;
+    height:28vh;
+    float:clear;
+    font-family: 'Crimson Text', serif;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:rgba(201, 201, 300,1);
     border:1px solid black;
   }
 
