@@ -4,9 +4,90 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600&display=swap" rel="stylesheet">
+  <title>Form</title>
 </head>
 <body>
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTLvprs5iPosnsBvKravtF91npkaA8aPLPpTujwmA4Orl2qcbnYtY0_Aj5ZN9M7acwlTgD4cdmk6Adz/pubhtml?gid=1190714614&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+  <nav class="navMain">
+    <img src="#" alt="logo" class="logo">
+    <button onclick="window.location.href='otheraccounts.html'">dev</button>
+    <ul class="navList">
+      <li><a href="index.html">home</a></li>
+      <li><a href="news.html">news</a></li>
+      <li><a href="recent.html">recent uploads</a></li>
+      <li><a href="#">log in/ <span class="signUp">sign up</span></a></li>
+    </ul>
+  </nav>
+  <div class="formBox">
+    <div class="announce">
+      <h1>submit new</h1>
+    </div>
+    <form action="" method="get" class="form-example">
+  <div class="form-example">
+    <label for="name">Phone Number: </label>
+    <input type="number" name="name" id="user-input" required minlength="4" maxlength="10">
+  </div>
+  <div class="form-example">
+    <label for="email">Description: </label>
+    <input type="text" name="desc" id="user-input" required minlength="10">
+  </div>
+  <div class="form-example">
+    <label for="date">Date: </label>
+    <input type="date" name="date" id="user_input" required>
+  </div>
+  <div class="form-example">
+    <label for="time">Date: </label>
+    <input type="time" name="time" id="user_input" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+  </div>
 </body>
 </html>
+
+<style>
+.announce{
+    text-align:center;
+    border: 1px solid black;
+    width:50%;
+    margin-top: 5vh;
+    margin-left: 17vh;
+    margin-right: 20vh;
+    font-family: 'Crimson Text', serif;
+}
+.formBox{
+    display:block;
+    margin-left: 25%;
+    background-color: #c9c9c9;
+    border: 1px solid black;
+    height: 70vh;
+    width:40%;
+}
+.form-example{
+    margin-top:1vh;
+    text-align: center;
+    height: 10vh;
+}
+.navMain{
+  font-family:#;
+  height:20vh;
+  margin-top:5vh;
+  padding:0px;
+
+}
+.navList{
+  float:right;
+  margin-right:5%;
+  list-style:none;
+  border:1px solid black;
+  padding:2px;
+}
+.navList li{
+    text-align:center;
+}
+.navList li:hover{
+  background-color:#c9c9c9;
+}
+</style>
