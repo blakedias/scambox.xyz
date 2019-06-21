@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up/In</title>
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600&display=swap" rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/7a6d1dd93e.js"></script> -->
+    <link rel="stylesheet" href="/css/signupandin.css">
+
+
+    <style>
+        @media(min-width:468px){
+
+        
+    </style>
+</head>
+<body>
+        <div class="flex-container1">
+                <!-- SIGN UP MODAL -->
+            <div id="modal-signup" class="modal-signup, modal">
+                <div class="modal-content">
+                <h4>Sign up</h4><br />
+                <form id="signup-form">
+                    <div class="input-field">
+                    <input type="email" id="signup-email" required />
+                    <label for="signup-email">Email address</label>
+                    </div>
+                    <div class="input-field">
+                    <input type="password" id="signup-password" required />
+                    <label for="signup-password">Choose password</label>
+                    </div>
+                    <button class="btn">Sign up</button>
+                </form>
+                </div>
+            </div>
+                <!-- LOGIN MODAL -->
+                <div id="modal-login" class="modal-login, modal">
+                  <div class="modal-content">
+                    <h4>Login</h4><br />
+                    <form id="login-form">
+                      <div class="input-field">
+                        <input type="email" id="login-email" required />
+                        <label for="login-email">Email address</label>
+                      </div>
+                      <div class="input-field">
+                        <input type="password" id="login-password" required />
+                        <label for="login-password">Your password</label>
+                      </div>
+                      <button class="btn">Login</button>
+                    </form>
+                  </div>
+                </div>
+        </div>
+        <div class="flex-container2">
+                <!-- ACCOUNT MODAL -->
+                <div style= "flex-grow: 8" id="modal-account" class="modal-account, modal">
+                  <div class="modal-content center-align">
+                    <h4>Account details</h4><br />
+                    <div class="account-details"></div>
+                    <div class="account-extras"></div>
+                  </div>
+                </div>
+            </div>
+
+    
+  <!-- GUIDE LIST -->
+  <div class="container" style="margin-top: 100px;">
+    <ul class="collapsible z-depth-0 guides" style="border: none;">
+    </ul>
+  </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+         <!-- CREATE A NEW SUBMISSOIN -->
+  <button class= "btn">
+      <a href="/html/submission.html">Submit New Entry</a>
+  </button>
+
+ <!-- LOG OUT -->
+  <button>
+        <a href=" " class="grey-text" id="logout">Logout</a>
+  </button>
+  <br>
+  
+  <!-- CREATE GUIDE MODAL -->
+  <div id="modal-create" class="modal">
+    <div class="modal-content">
+      <h4>Create Guide</h4><br />
+      <form id="create-form">
+        <div class="input-field">
+          <input type="text" id="title" required>
+          <label for="title">Guide Title</label>
+        </div>
+        <div class="input-field">
+          <textarea id="content" class="materialize-textarea" required></textarea>
+          <label for="content">Guide Content</label>
+        </div>
+        <button class="btn yellow darken-2 z-depth-0">Create</button>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- GUIDE LIST
+  <div class="container" style="margin-top: 40px;">
+    <ul class="collapsible  submissions" style="border: none;">
+      <li>
+        <div class="collapsible-header grey lighten-4">submission title</div>
+        <div class="collapsible-body white">Lorem ipsum dolor sit amet.</div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">submission title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">submission title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header grey lighten-4">Guide title</div>
+        <div class="collapsible-body white"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+    </ul>
+  </div> -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAtnRNgvJcFRPifabd-4jTFicNHpNUQrqU",
+    authDomain: "scambox-xyz.firebaseapp.com",
+    databaseURL: "https://scambox-xyz.firebaseio.com",
+    projectId: "scambox-xyz",
+    appId: "1:1072586235510:web:9a06ef77c725aa2a"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  //Make auth and firestore references
+  const auth = firebase.auth();
+  const db = firebase.firestore();
+
+  //Update firestore settings
+//   db.settings({ timestampsInSnapshots: true });
+</script>
+
+<script src="/js/auth.js"></script>
+<script src="/js/index.js"></script>
+
+</body>
+</html>
