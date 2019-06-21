@@ -9,70 +9,20 @@ button {
 }
 
 .gglSearch, .news, .info {
-    box-shadow: 5px 5px 5px 5px black ;
-    width: 100px;
-    margin: 10px;
+    display: flex;
+    justify-content: center;
     text-align: center;
-    line-height: 75px;
     font-size: 30px;
 }
 
 .wrapper {
     display: flex;
-    /* flex-flow: nowrap;
-    font-weight: bold; */
     text-align: center;
     justify-content: center;
     align-items: center;
     flex-basis: auto;
 }
 
-.gglSearch {
-    z-index: 4;
-}
-
-.info {
-    border: 1px solid black;
-    width: 50px;
-    height: 100px;
-}
-  
-.search .button {
-    cursor: pointer;
-    font-size: 16px;  
-    border: 1px solid black;
-    outline: none;
-    padding: 14px 16px;
-    font-family: inherit;
-    margin: 0;
-    border-radius: 15px 30px;
-}
-  
-/* .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {
-      background-color: #55A0FF;
-}
-  
-.show {
-    display: block;
-} */
   
 @media all and (min-width: 600px) {
     .aside { flex: 1 0 0; }
@@ -80,7 +30,7 @@ button {
   
 @media all and (min-width: 800px) {
     .news    { flex: 3 0px; }
-    .search { order: 1; } 
+    .gglSearch { order: 1; } 
     .news    { order: 2; }
     .info { order: 3; }
     .footer  { order: 4; }
