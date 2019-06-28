@@ -9,13 +9,11 @@
 </head>
 <body>
   <nav class="navMain">
-    <img src="#" alt="logo" class="logo">
-    <button onclick="window.location.href='otheraccounts.html'">dev</button>
     <ul class="navList">
       <li><a href="index.html">home</a></li>
       <li><a href="news.html">news</a></li>
-      <li><a href="recent.html">recent uploads</a></li>
-      <li><a href="#">log in/ <span class="signUp">sign up</span></a></li>
+      <li><a href="myaccount.html">recent uploads</a></li>
+      <li><a href="signupandin.html">log in/ <span class="signUp">sign up</span></a></li>
     </ul>
   </nav>
   <main>
@@ -32,16 +30,16 @@
         <p class="search-desc">(no dashes, no spaces. 10 character limit.)</p>
       </h2><br>
         <input type="text" name="phoneNum" class="searchInput" maxlength="10"></input>
+        <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
       </form>
-      <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
     </div>
     <div id="searchBoxAdv">
       <form>
         <h2>search for anything
       </h2><br>
         <input type="text" name="phoneNum" class="searchInput" maxlength="100"></input>
+        <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
       </form>
-      <button class="searchBtn" onclick="window.location.href='recent.html'">submit<S/button>
     </div>
   </main>
   <script>

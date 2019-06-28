@@ -10,7 +10,6 @@
 <body>
   <nav class="navMain">
     <img src="#" alt="logo" class="logo">
-    <button onclick="window.location.href='otheraccounts.html'">dev</button>
     <ul class="navList">
       <li><a href="index.html">home</a></li>
       <li><a href="news.html">news</a></li>
@@ -18,26 +17,26 @@
       <li><a href="#">log in/ <span class="signUp">sign up</span></a></li>
     </ul>
   </nav>
-  <div class="formBox" id="boxForm">
+  <div class="formBox">
     <div class="announce">
       <h1>submit new</h1>
     </div>
-    <form action="" method="get" class="form-example" id="form-example">
+    <form action="" method="get" class="form-example">
   <div class="form-example">
     <label for="name">Phone Number: </label>
-    <input type="number" name="name" id="user-input, number" required minlength="4" maxlength="10">
+    <input type="number" name="name" id="user-input" required minlength="4" maxlength="10">
   </div>
   <div class="form-example">
     <label for="email">Description: </label>
-    <input type="text" name="desc" id="user-input, descr" required minlength="10">
+    <input type="text" name="desc" id="user-input" required minlength="10">
   </div>
   <div class="form-example">
     <label for="date">Date: </label>
-    <input type="date" name="date" id="user_input, date" required>
+    <input type="date" name="date" id="user_input" required>
   </div>
   <div class="form-example">
     <label for="time">Date: </label>
-    <input type="time" name="time" id="user_input, time" required>
+    <input type="time" name="time" id="user_input" required>
   </div>
   <div class="form-example">
     <input type="submit" value="Submit">
@@ -91,10 +90,3 @@
   background-color:#c9c9c9;
 }
 </style>
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-
-<script src="/js/response.js"></script>
-<script src="/js/auth.js"></script>
-<script src="/js/index.js"></script>
