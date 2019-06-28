@@ -6,17 +6,83 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign Up/In</title>
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600&display=swap" rel="stylesheet">
     <!-- <script src="https://kit.fontawesome.com/7a6d1dd93e.js"></script> -->
     <link rel="stylesheet" href="/css/signupandin.css">
 
 
     <style>
         @media(min-width:468px){
+          html, body{
+    margin:0px;
+    padding:0px;
+  }
 
+  body, head, script {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .navMain{
+    font-family:#;
+    height:20vh;
+    margin-top:5vh;
+    padding:0px;
+  }
+  .logo{
+    margin-left:5%;
+    float:left;
+  }
+  .navList{
+    float:right;
+    margin-right:5%;
+    list-style:none;
+    border:1px solid black;
+    padding:2px;
+  }
+  .navList li{
+      text-align:center;
+  }
+  .navList li:hover{
+    background-color:#c9c9c9;
+  }
+  a{
+    text-decoration:none;
+    color:black;
+  }
         
     </style>
 </head>
 <body>
+    <nav class="navMain">
+        <img src="#" alt="logo" class="logo">
+        <button onclick="window.location.href='otheraccounts.html'">dev</button>
+
+      <ul id="nav-mobile" class="navList">
+          <li class="logged-in">
+            <a href="#" class="grey-text modal-trigger" data-target="modal-account">Account</a>
+          </li>
+          <li class="logged-in">
+            <a href="#" class="grey-text" id="logout">Logout</a>
+          </li>
+          <li class="logged-in">
+            <a href="#" class="grey-text modal-trigger" data-target="modal-create">Create Guide</a>
+          </li>
+          <li class="logged-out" >
+            <a href="#" class="grey-text modal-trigger" data-target="modal-login">Login</a>
+          </li>
+          <li class="logged-out" >
+            <a href="#" class="grey-text modal-trigger" data-target="modal-signup">Sign up</a>
+          </li>
+      </ul>
+        
+        <ul class="navList">
+          <li><a href="index.html">home</a></li>
+          <li><a href="news.html">news</a></li>
+          <li><a href="recent.html">recent uploads</a></li>
+          <li><a href="#">log in/ <span class="signUp">sign up</span></a></li>
+        </ul>
+    </nav>
         <div class="flex-container1">
                 <!-- SIGN UP MODAL -->
             <div id="modal-signup" class="modal-signup, modal">
@@ -30,6 +96,10 @@
                     <div class="input-field">
                     <input type="password" id="signup-password" required />
                     <label for="signup-password">Choose password</label>
+                    </div>
+                    <div class="input-field">
+                    <input type="text" id="signup-bio" required />
+                    <label for="signup-bio">One Line Bio</label>
                     </div>
                     <button class="btn">Sign up</button>
                 </form>
@@ -54,15 +124,15 @@
                 </div>
         </div>
         <div class="flex-container2">
-                <!-- ACCOUNT MODAL -->
-                <div style= "flex-grow: 8" id="modal-account" class="modal-account, modal">
-                  <div class="modal-content center-align">
-                    <h4>Account details</h4><br />
-                    <div class="account-details"></div>
-                    <div class="account-extras"></div>
-                  </div>
-                </div>
+            <!-- ACCOUNT MODAL -->
+            <div style= "flex-grow: 8" id="modal-account" class="modal-account, modal">
+              <div class="modal-content center-align">
+                <h4>Account details</h4><br />
+                <div class="account-details"></div>
+                <div class="account-extras"></div>
+              </div>
             </div>
+        </div>
 
     
   <!-- GUIDE LIST -->
@@ -75,10 +145,6 @@
 <br>
 <br>
 <br>
-         <!-- CREATE A NEW SUBMISSOIN -->
-  <button class= "btn">
-      <a href="/html/submission.html">Submit New Entry</a>
-  </button>
 
  <!-- LOG OUT -->
   <button>
@@ -102,6 +168,33 @@
         <button class="btn yellow darken-2 z-depth-0">Create</button>
       </form>
     </div>
+  </div>
+
+  <div class="formBox" id="boxForm">
+    <div class="announce">
+      <h1>submit new</h1>
+    </div>
+    <form action="" method="get" class="form-example" id="form-example">
+  <div class="form-example">
+    <label for="name">Phone Number: </label>
+    <input type="number" name="name" id="user-input, number" required minlength="4" maxlength="10">
+  </div>
+  <div class="form-example">
+    <label for="email">Description: </label>
+    <input type="text" name="desc" id="user-input, descr" required minlength="10">
+  </div>
+  <div class="form-example">
+    <label for="date">Date: </label>
+    <input type="date" name="date" id="user_input, date" required>
+  </div>
+  <div class="form-example">
+    <label for="time">Date: </label>
+    <input type="time" name="time" id="user_input, time" required>
+  </div>
+  <div class="form-example">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
   </div>
 
 
