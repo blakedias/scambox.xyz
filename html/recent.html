@@ -9,7 +9,50 @@
     <link href="https://fonts.googleapis.com/css?family=Crimson+Text:600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/news.css">
 </head>
+<style>
+html, body{
+    margin:0px;
+    padding:0px;
+  }
+  .navMain{
+    font-family:#;
+    height:20vh;
+    margin-top:5vh;
+    padding:0px;
+  }
+  .logo{
+    margin-left:5%;
+    float:left;
+  }
+  .navList{
+    float:right;
+    margin-right:5%;
+    list-style:none;
+    border:1px solid black;
+    padding:2px;
+  }
+  .navList li{
+      text-align:center;
+  }
+  .navList li:hover{
+    background-color:#c9c9c9;
+  }
+  a{
+    text-decoration:none;
+    color:black;
+  }
+</style>
 <body>
+    <nav class="navMain">
+        <img src="#" alt="logo" class="logo">
+        <button onclick="window.location.href='otheraccounts.html'">dev</button>
+        <ul class="navList">
+          <li><a href="index.html">home</a></li>
+          <li><a href="news.html">news</a></li>
+          <li><a href="recent.html">recent uploads</a></li>
+          <li><a href="#">log in/ <span class="signUp">sign up</span></a></li>
+        </ul>
+      </nav>
     <div class= "wrapper" >
         <div class = "search aside-1">
             <button class= "button" onclick= "myFunction()">Filter
@@ -43,6 +86,15 @@
 
 
 <script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyAtnRNgvJcFRPifabd-4jTFicNHpNUQrqU",
+    authDomain: "scambox-xyz.firebaseapp.com",
+    databaseURL: "https://scambox-xyz.firebaseio.com",
+    projectId: "scambox-xyz",
+    appId: "1:1072586235510:web:9a06ef77c725aa2a"
+  };
+  firebase.initializeApp(config);
+  
         function myFunction() {
           document.getElementById("myDropdown").classList.toggle("show");
         }
@@ -55,5 +107,9 @@
             }
           }
         }
+        dbRefObject.on('value', snap => {
+          preObject.innerText = JSON.stringify(snap.val(), null, 3);
+
+        });
         </script>
 </html>
